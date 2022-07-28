@@ -1,5 +1,5 @@
 # Master Thesis
-This repository contains the code and data for the Master Thesis Project: Peer influences on online incivility. The raw data (not available due to sensitivity reasons) was collected from the subreddit R/politiek on May 12th, 2022. The pseudonomised data can be found in the excel file "df" . 
+This repository contains the code and data for the Master Thesis Project: Peer influences on online incivility. The raw data (not available due to sensitivity reasons) was collected from the subreddit R/politiek on May 12th, 2022. The pseudonymised data can be found in the excel file "df" . 
 
 # Content of the scripts
 
