@@ -8,7 +8,7 @@ from sklearn.model_selection import KFold
 path =r'...'
 
 # as df
-data_excel = pd.read_excel(path+r"\coded_min.xlsx")
+data_excel = pd.read_excel(path+r"\coded_final.xlsx")
 
 # k fold
 kf = KFold(n_splits=5, shuffle=False)
@@ -28,8 +28,8 @@ for train_indices, test_indices in kf.split(data_excel):
                                                   sep=' ', header=None, quoting=csv.QUOTE_NONE,
                                                   quotechar="", escapechar=" ")
 
-    model = fasttext.train_supervised(input=path+r"\train_data.txt", lr=0.1, dim=300,
-                                      verbose=1, epoch=5,
+    model = fasttext.train_supervised(input=path+r"\train_data.txt", lr=1, dim=300,
+                                      verbose=1, epoch=25,
                                       pretrained_vectors=path+r"\cc.nl.300.vec")
 
     # testing the model
