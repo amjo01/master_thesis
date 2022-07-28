@@ -5,10 +5,10 @@ from datetime import datetime
 from sklearn.model_selection import KFold
 
 # path setting
-path =r'...\data'
+path =r'...'
 
 # as df
-data_excel = pd.read_excel(path+r"\coded.xlsx")
+data_excel = pd.read_excel(path+r"\coded_min.xlsx")
 
 # k fold
 kf = KFold(n_splits=5, shuffle=False)
